@@ -1,0 +1,10 @@
+使用文档
+《运行结果相关》
+1、run solution_newdict_main.py,开头有一个num参数为设置新词提取个数，如果需要全部新词，填'all'
+2、每天的新词详细记录在result文件夹下
+3、新词的累加统计记录在主目录下的newdict****.txt,****为开始记录的时间。如果需要重新开始统计，删除此文件再运行程序
+4、solution_hotdict_main.py为热词统计，现在没有这个需求，注释掉了
+
+《程序相关》
+1、source文件夹下为各个网站的json解析，拿到标题/feed流内容
+2、utils文件夹下的utils.py为提取各个网站新词的方法；globallist.py和mergesort.py是汇总各个网站的内容；testcixing.py实现测试一些词的词性，为了过滤使用
